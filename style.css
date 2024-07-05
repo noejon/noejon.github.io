@@ -1,3 +1,199 @@
+/*
+ *
+ *  LAYOUT
+ *  
+ */
 body {
   min-height: 100vh;
+}
+
+/* Generalities */
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-row.justify-space-around {
+  justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-jon-position {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.avatar-relative {
+  position: relative;
+}
+
+/*
+ *
+ *  SPACING
+ *  
+ */
+
+/* Big Jon */
+/* Compensating the margins created by the font sizes changes */
+.big-jon-compensation-margins {
+  margin-top: -4.5rem;
+  margin-bottom: -4rem;
+}
+
+.call-out.pre {
+  margin: 2rem 0;
+}
+
+.call-out.pre:not(:first-of-type)::before {
+  margin: 0 3rem;
+}
+
+/* End of big Jon */
+
+
+/*
+ *
+ *  AESTHETICS
+ *  
+ */
+:root {
+  --background-color: #13151a;
+  --text-color: #f5f5f5;
+  --code-background-color: #193549;
+  --code-text-color: #ffc600;
+
+  --blink-182: #182;
+  --abba: #abba;
+  --bad-ass: #bada55;
+  --money-money: #888;
+  --love: #520;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  overflow: scroll;
+  scrollbar-color: var(--text-color);
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.bad-ass {
+  color: var(--bad-ass);
+}
+
+.love {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  50%,
+  100% {
+    color: red;
+  }
+
+  30%,
+  80% {
+    color: var(--love);
+  }
+}
+
+.pseudo-code {
+  color: var(--money-money);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.code {
+  background-color: var(--code-background-color);
+  color: var(--code-text-color);
+  font-family: monospace;
+  border: 1px solid rgba(21, 35, 45, 0.2);
+  border-radius: 5px;
+  padding: 0.3ch;
+  font-weight: 300;
+}
+
+.cursor {
+  color: var(--blink-182);
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.call-out {
+  text-transform: uppercase;
+  text-align-last: center;
+  font-weight: 250;
+  line-height: 1.25;
+}
+
+.notes {
+  font-style: italic;
+  color: var(--abba);
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+.call-out.pre:not(:first-of-type)::before {
+  content: '✧'
+}
+
+.call-out.this-is {
+  font-size: 2rem;
+
+}
+
+.call-out.big-jon {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.avatar {
+  letter-spacing: 2rem;
+  color: transparent;
+}
+
+.call-out.i-love-dev {
+  font-size: 3rem;
+}
+
+/*
+ *
+ *  SPECIFICS
+ *  
+ */
+
+/* I could not be bothered refactoring  */
+
+.jon {
+  position: absolute;
+  user-select: none;
+  width: 100%;
+  aspect-ratio: 1/1;
+  transform: translate(-5%, 0);
+  background-image: url('./images/Jon.jpg');
+  border: 0.45rem solid #f5f5f5;
+  border-radius: 50%;
+  overflow: hidden;
+  /* TODO - Change when you have a new photo */
+  background-size: 110%;
+  box-shadow: inset 0 0 1rem var(--background-color);
 }
