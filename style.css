@@ -3,22 +3,26 @@
   --text-color: #f5f5f5;
   --code-background-color: #193549;
   --code-text-color: #ffc600;
-  --gold: #CFB53B;
+  --gold: gold;
+  --linkedin-blue: #0A66C2;
+  --white: #fff;
 
 
   /* Is it easter yet? */
   --blink-182: #182;
   --abba: #abba;
   --bad-ass: #bada55;
+  --ssa-dab: #7555DA;
   --money-money: #888;
   --tainted-love: #520;
   --the-answer-to-the-ultimate-question-of-life-the-universe-and-everything: #424242;
   --love: #b20;
   --s-tier: #FF7F80;
-  --that-color-that-I-saw-and-liked: #4c49ea;
-  --that-color-complementary: #E7EA49;
+  --that-color-that-I-saw-and-liked: #35BCCA;
+  --that-color-complementary: #CA4335;
   --toi-toi-toi: #2a2a2a;
   --da-da-da: #dadada;
+  --2-be-3-or-not-to-be: #2b3;
 }
 
 /*
@@ -91,6 +95,10 @@ body {
 
 .width-small {
   max-width: 33ch;
+}
+
+.in-your-face.width-small {
+  max-width: 22ch;
 }
 
 .width-medium {
@@ -167,6 +175,16 @@ html {
 body {
   background: var(--background-color);
   color: var(--text-color);
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--2-be-3-or-not-to-be);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .bad-ass {
@@ -261,7 +279,7 @@ body {
 
 .card.transition {
   filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
-  transition: 0.6s ease-in;
+  transition: 0.5s ease-in;
 }
 
 .card.transition::before {
@@ -284,8 +302,62 @@ body {
 }
 
 .card.transition:hover {
-  color: var(--that-color-complementary);
+  color: var(--background-color);
 }
+
+/* Transition specific to anchors in the cards */
+.card.transition a {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover a {
+  color: var(--that-color-complementary);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before a {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to the anchor */
+
+/* Transition specific to S-Tier in the cards */
+.card.transition .s-tier {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover .s-tier {
+  color: var(--bad-ass);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before .s-tier {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to the S-Tier */
+
+/* Transition specific to bad-ass in the cards */
+.card.transition .bad-ass {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover .bad-ass {
+  color: var(--bad-ass);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before .bad-ass {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to the S-Tier */
 
 .card.darker {
   background-color: var(--toi-toi-toi);
@@ -341,6 +413,37 @@ body {
 
 .artist.small-font {
   font-size: 1.75rem;
+}
+
+a:hover:has(.linkedin-linked) {
+  background-color: var(--white);
+  text-decoration: none;
+  padding: 0.2ch 0 0.2ch 0;
+  border-radius: 0.25rem;
+}
+
+a:hover:has(.linkedin-in) {
+  background-color: var(--white);
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+a:hover .linkedin-in {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.linkedin-linked {
+  color: var(--linkedin-blue);
+  padding-left: 0.2ch;
+}
+
+.linkedin-in {
+  color: var(--white);
+  background-color: var(--linkedin-blue);
+  display: inline-block;
+  padding: 0.2ch;
+  border-radius: 3px;
+  margin-left: 0.2ch;
 }
 
 /*
