@@ -4,9 +4,19 @@
   --code-background-color: #193549;
   --code-text-color: #ffc600;
   --gold: gold;
+  --silver: silver;
+  --shiny: #fff800;
   --linkedin-blue: #0A66C2;
   --white: #fff;
 
+
+  /* Kind of magic */
+  --magic-start: #ED12D8;
+  --magic-middle: #D8ED12;
+  --magic-end: #12D8ED;
+  --dark-magic-start: #910B84;
+  --dark-magic-middle: #84910B;
+  --dark-magic-end: #0B8491;
 
   /* Is it easter yet? */
   --blink-182: #182;
@@ -200,7 +210,27 @@ a:hover {
 }
 
 .magic {
-  /* Do a magic unicorn rainbow gradient infinite transition */
+  background-image: linear-gradient(-260deg, var(--magic-start) 0%, var(--magic-middle) 33%, var(--magic-end) 66%, var(--magic-start) 100%);
+  background-clip: text;
+  --webkit--background-clip: text;
+  color: transparent;
+  animation: text-clip 1s linear infinite;
+  background-size: 200% auto;
+}
+
+.shiny {
+  background-image: linear-gradient(-225deg, #fff800 0%, gold 33%, silver 66%, #fff800 100%);
+  background-clip: text;
+  --webkit--background-clip: text;
+  color: transparent;
+  animation: text-clip 1.25s linear infinite;
+  background-size: 200% auto;
+}
+
+@keyframes text-clip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .love-animated {
@@ -248,6 +278,7 @@ a:hover {
 }
 
 .code {
+  text-transform: uppercase;
   background-color: var(--code-background-color);
   color: var(--code-text-color);
   font-family: monospace;
@@ -348,7 +379,7 @@ a:hover {
 }
 
 .card.transition:hover .bad-ass {
-  color: var(--bad-ass);
+  color: var(--ssa-dab);
   transition: 0.5s ease-in;
 }
 
@@ -357,7 +388,43 @@ a:hover {
   transform: scale(200);
 }
 
-/* End of transition specific to the S-Tier */
+/* End of transition specific to the badass */
+
+/* Transition specific to magic in the cards */
+.card.transition .magic {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover .magic {
+  background-image: linear-gradient(-260deg, var(--dark-magic-start) 0%, var(--dark-magic-middle) 33%, var(--dark-magic-end) 66%, var(--dark-magic-start) 100%);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before .magic {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to magic */
+
+/* Transition specific to magic in the cards */
+.card.transition .magic {
+  filter: drop-shadow(0 .3rem 0.5rem 0 var(--the-answer-to-the-ultimate-question-of-life-the-universe-and-everything));
+  transition: 0.75s ease-in;
+}
+
+.card.transition:hover .magic {
+  background-image: linear-gradient(-260deg, var(--dark-magic-start) 0%, var(--dark-magic-middle) 33%, var(--dark-magic-end) 66%, var(--dark-magic-start) 100%);
+  transition: 0.5s ease-in;
+}
+
+.card.transition:hover::before .magic {
+  transition-delay: 0.1s;
+  transform: scale(200);
+}
+
+/* End of transition specific to magic */
 
 .card.darker {
   background-color: var(--toi-toi-toi);
