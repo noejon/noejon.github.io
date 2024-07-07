@@ -43,6 +43,7 @@
  */
 body {
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 .main-wrapper {
@@ -140,7 +141,6 @@ body {
 
 .big-jon-position {
   display: flex;
-  gap: 0.4rem;
 }
 
 .skill-image {
@@ -150,6 +150,7 @@ body {
 }
 
 .skill-grid {
+  padding: 0;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fill, 8rem);
@@ -157,10 +158,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.skill-item {
-  width: 22ch;
 }
 
 /*
@@ -197,11 +194,7 @@ body {
 }
 
 .call-out.pre {
-  margin: 2rem 0;
-}
-
-.call-out.pre:not(:first-of-type)::before {
-  margin: 0 3rem;
+  margin: 10vh 0;
 }
 
 /*
@@ -473,13 +466,13 @@ a:hover {
   line-height: 1.25;
 }
 
-.call-out.pre:not(:first-of-type)::before {
-  content: '✧'
+.call-out.pre {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .call-out.this-is {
   font-size: 2rem;
-
 }
 
 .call-out.big-jon {
@@ -560,9 +553,8 @@ a:hover .linkedin-in {
   user-select: none;
   width: 100%;
   aspect-ratio: 1/1;
-  transform: translate(-5%, 0);
   background-image: url('./images/Jon.jpg');
-  border: 0.45rem solid #f5f5f5;
+  border: 0.5rem solid #f5f5f5;
   border-radius: 50%;
   overflow: hidden;
   /* TODO - Change when you have a new photo */
