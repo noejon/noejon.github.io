@@ -20,13 +20,13 @@ const badges = [
   {
     skill: "HTML 5",
     yearStarted: "2008",
-    imageLocation: "images/HTML.svg",
+    imageLocation: "images/html.svg",
     alt: "The HTML logo"
   },
   {
     skill: "CSS 3",
     yearStarted: "2008",
-    imageLocation: "images/CSS.svg",
+    imageLocation: "images/css.svg",
     alt: "The CSS logo"
   },
   {
@@ -62,7 +62,7 @@ const badges = [
   {
     skill: "Docker",
     yearStarted: "2018",
-    imageLocation: "images/react.svg",
+    imageLocation: "images/docker.svg",
     alt: "The Docker logo"
   },
   {
