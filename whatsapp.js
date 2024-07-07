@@ -12,10 +12,10 @@ const MESSAGES = [
    2 
   <a target="_blank" href="https://dev.to/noejon/copying-a-git-repository-properly-j67">
     articles
-  </a> I ever wrote. I like writing thorough documentation. (Just don't check this page's github!)`,
+  </a> I ever wrote. I like writing thorough documentation. (Don't check this page's github!)`,
   `I am pretty adaptable to any technologies/languages. BUT PLEEEAAAAAASE don't ask me to learn COBOL`,
   `Pretty cool, isn't it?`,
-  `Growing as a leader I read lots of books about leadership. Here are the few I keep coming back to: </br>
+  `Growing as a leader I read many books about leadership. The few I keep coming back to: </br>
   <a target="_blank" href="https://www.oreilly.com/library/view/the-managers-path/9781491973882/">
     The manager's path
   </a>,
@@ -26,7 +26,7 @@ const MESSAGES = [
     The Coaching Habit
   </a>`,
   `It definitely sparks more joy than tidying up the kids' playroom!`,
-  `You probably did not scroll all that far! I can probably say whatever I want!</br> There we go! 🥒🥒🥒🥒 Cucumber! 🥒🥒🥒🥒`,
+  `You probably left already! I can say whatever I want! Cucumber!`,
   `Jokes aside, real badges are next`,
   `If you see it here, I am somewhat skilled with it and have shipped code to production.`,
   `That or you are impressed by our little chat! Wanna chat further? Continue reading`,
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let lastScrollTop = window.scrollY || document.body.scrollTop;
   let scrollDirection;
 
-  document.addEventListener("scroll", function (event) {
+  document.addEventListener("scroll", function (_event) {
     const currentScrollTop = window.scrollY || document.body.scrollTop;
 
     if (currentScrollTop > lastScrollTop) {
@@ -76,7 +76,15 @@ document.addEventListener('DOMContentLoaded', function () {
         leTalkativeJon.getBoundingClientRect().width +
         "px";
     }
-    leTalkativeJon.style.top = messageTop + window.scrollY + 20 + "px";
+    const someMorePixelsToAvoidOverlapBecauseICouldNotThinkOfAMuchBetterWay = 52;
+    leTalkativeJon.style.top = messageTop +
+      window.scrollY +
+      someMorePixelsToAvoidOverlapBecauseICouldNotThinkOfAMuchBetterWay +
+      // Future me might curse at present me when he sees that next line
+      // Present me is fine with the tradeoff of going to bed with a nicely working page
+      // The magic number 25 is just enough to be responsive on 320x480 So I suppose
+      // I am good to go to bed. Sorry future Jon
+      (message.dataset.messageId === "7" ? 25 : 0) + "px";
     document.querySelector('#leMessage').innerHTML = MESSAGES[message.dataset.messageId];
   }
 
