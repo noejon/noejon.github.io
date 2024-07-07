@@ -112,6 +112,11 @@ body {
   display: block;
 }
 
+.bottom-spacer {
+  height: 42vh;
+  display: block;
+}
+
 .z-0 {
   z-index: 0
 }

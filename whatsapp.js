@@ -9,7 +9,7 @@ const MESSAGES = [
   "It definitely sparks more joy than tidying up the kids' playroom!",
   "You probably did not scroll all that far! I can probably say whatever I want!</br> There we go! 🥒🥒🥒🥒 Cucumber! 🥒🥒🥒🥒",
   "Glad you are still around! Some stats for you",
-  "That or you are impressed by our little chat! Wanna chat further? Continue scrolling, we're nearly there"
+  "That or you are impressed by our little chat! Wanna chat further? Continue reading"
 ];
 const SCROLL_DIRECTION_UP = "up";
 const SCROLL_DIRECTION_DOWN = "down";
