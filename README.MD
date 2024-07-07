@@ -38,3 +38,17 @@ Approach using data-message-id.
 - Step 1: create an array of messages
   - This needs to be HTML cause we are using tags. There is no DB call whatsoever, so we'll just set the innerHTML
 - Step 2: Create a div with the "data-message-id"
+
+Document the above better.. when you have time.
+
+## July 7th TODOS
+
+- Talkative Jon could fit its content a bit better
+- Some Boxes don't have words highlighting, find some and highlight
+- Some parts are not as responsive as I wished:
+  - The header part in general
+  - Talkative Jon
+  - The skills list
+- Add the section about annalise
+- Whatsapp seen not seen
+- Whatsapp arrow on the message to actually look like what's app

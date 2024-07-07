@@ -8,8 +8,9 @@ const MESSAGES = [
   "Far from 200 books, but I wanted to grow as a leader and read lots of books about that. There are a few I keep coming back to, The manager's path from Camille Fournier, Resilient Management from Lara Hogan and The Coaching Habit from Michael Bungay Stanier",
   "It definitely sparks more joy than tidying up the kids' playroom!",
   "You probably did not scroll all that far! I can probably say whatever I want!</br> There we go! 🥒🥒🥒🥒 Cucumber! 🥒🥒🥒🥒",
-  "Glad you are still around! Some stats for you",
-  "That or you are impressed by our little chat! Wanna chat further? Continue reading"
+  "I heard react is the cool kid in town, so figured I should emphasise on it! Real badges are next",
+  "If you see it here I am somewhat skilled with it and have shipped code to production.",
+  "That or you are impressed by our little chat! Wanna chat further? Continue reading",
 ];
 const SCROLL_DIRECTION_UP = "up";
 const SCROLL_DIRECTION_DOWN = "down";

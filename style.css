@@ -53,6 +53,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
 }
 
@@ -142,6 +143,25 @@ body {
   gap: 0.4rem;
 }
 
+.skill-image {
+  display: block;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, 8rem);
+  grid-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-item {
+  width: 22ch;
+}
 
 /*
  *
@@ -183,9 +203,6 @@ body {
 .call-out.pre:not(:first-of-type)::before {
   margin: 0 3rem;
 }
-
-/* End of big Jon */
-
 
 /*
  *
@@ -571,7 +588,7 @@ a:hover .linkedin-in {
 .le-talkative-jon .message-box {
   position: absolute;
   bottom: 0rem;
-  text-align: justify;
+  text-align: left;
   background-color: var(--whats-up);
   padding: 0.75rem;
   border-radius: 20px;
