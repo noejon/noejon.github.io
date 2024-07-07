@@ -1,16 +1,35 @@
 const MESSAGES = [
-  "<sup>*</sup>I most certainly, definitely, for sure, won't use the fee to bribe anyone.",
-  "Yep! That's me &#128175;, don't look further! <br/>Actually, please continue scrolling, I have put a lot of work into this!",
-  "If I were you, I would probably stick to walking, and as far as possible from the road!",
-  "We eventually scaled to a company of 6 people, and that was my introduction to being a leader. Boy have I learned since then!",
-  "Here are the <a target=\"_blank\" href=\"https://dev.to/noejon/setting-up-a-node-js-development-environment-in-2-4eb1\">only</a> 2 <a target=\"_blank\" href=\"https://dev.to/noejon/copying-a-git-repository-properly-j67\">articles</a> I ever wrote. I am quite good at writing thorough documentation if needed. (Just don't check the github for this page!)",
-  "I am pretty adaptable to any technology/language. Just please don't ask me to learn COBOL",
-  "Far from 200 books, but I wanted to grow as a leader and read lots of books about that. There are a few I keep coming back to, The manager's path from Camille Fournier, Resilient Management from Lara Hogan and The Coaching Habit from Michael Bungay Stanier",
-  "It definitely sparks more joy than tidying up the kids' playroom!",
-  "You probably did not scroll all that far! I can probably say whatever I want!</br> There we go! 🥒🥒🥒🥒 Cucumber! 🥒🥒🥒🥒",
-  "I heard react is the cool kid in town, so figured I should emphasise on it! Real badges are next",
-  "If you see it here I am somewhat skilled with it and have shipped code to production.",
-  "That or you are impressed by our little chat! Wanna chat further? Continue reading",
+  `<sup>*</sup>Definitely won't use the fee to bribe anyone.`,
+  `Yep! That's me &#128175;, don't look further! <br/>Actually, continue scrolling, put lots of work into this!`,
+  `Was initially asked to do the project in excel VBA...
+  Asked two weeks for a C# Prototype!
+  Prototype grew into an award winner`,
+  `The company scaled to 6 people. That was my introduction to being a leader. Boy have I learned since then!`,
+  `Here are the 
+  <a target="_blank" href="https://dev.to/noejon/setting-up-a-node-js-development-environment-in-2-4eb1">
+    only
+  </a>
+   2 
+  <a target="_blank" href="https://dev.to/noejon/copying-a-git-repository-properly-j67">
+    articles
+  </a> I ever wrote. I like writing thorough documentation. (Just don't check this page's github!)`,
+  `I am pretty adaptable to any technologies/languages. BUT PLEEEAAAAAASE don't ask me to learn COBOL`,
+  `Pretty cool, isn't it?`,
+  `Growing as a leader I read lots of books about leadership. Here are the few I keep coming back to: </br>
+  <a target="_blank" href="https://www.oreilly.com/library/view/the-managers-path/9781491973882/">
+    The manager's path
+  </a>,
+  <a target="_blank" href="https://resilient-management.com/">
+    Resilient Management
+  </a> and 
+  <a target="_blank" href="https://www.mbs.works/coaching-habit-book/">
+    The Coaching Habit
+  </a>`,
+  `It definitely sparks more joy than tidying up the kids' playroom!`,
+  `You probably did not scroll all that far! I can probably say whatever I want!</br> There we go! 🥒🥒🥒🥒 Cucumber! 🥒🥒🥒🥒`,
+  `Jokes aside, real badges are next`,
+  `If you see it here, I am somewhat skilled with it and have shipped code to production.`,
+  `That or you are impressed by our little chat! Wanna chat further? Continue reading`,
 ];
 const SCROLL_DIRECTION_UP = "up";
 const SCROLL_DIRECTION_DOWN = "down";

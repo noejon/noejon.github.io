@@ -206,7 +206,7 @@ body {
 
 html {
   font-family: system-ui, sans-serif;
-  overflow: scroll;
+  overflow-y: scroll;
   scrollbar-color: var(--text-color);
 }
 
