@@ -48,6 +48,7 @@ body {
 
 .main-wrapper {
   width: 100%;
+  margin-top: 3rem;
 }
 
 .flex-row {
@@ -110,7 +111,7 @@ body {
 }
 
 .spacer {
-  height: 8rem;
+  height: 14rem;
   display: block;
 }
 
@@ -184,13 +185,6 @@ body {
 
 .to-center {
   margin: 0 auto;
-}
-
-/* Big Jon */
-/* Compensating the margins created by the font sizes changes */
-.big-jon-compensation-margins {
-  margin-top: -4.5rem;
-  margin-bottom: -4rem;
 }
 
 .call-out.pre {
@@ -520,6 +514,7 @@ a:hover:has(.linkedin-linked) {
 a:hover:has(.linkedin-in) {
   background-color: var(--white);
   text-decoration: none;
+  padding: 0.2ch 0;
   border-radius: 0.25rem;
 }
 
@@ -536,8 +531,8 @@ a:hover .linkedin-in {
   color: var(--white);
   background-color: var(--linkedin-blue);
   display: inline-block;
-  padding: 0.2ch;
-  border-radius: 3px;
+  padding: 0 0.2ch;
+  border-radius: 0.25rem;
   margin-left: 0.2ch;
 }
 
@@ -579,10 +574,8 @@ a:hover .linkedin-in {
 
 .le-talkative-jon .message-box {
   position: absolute;
-  bottom: 0;
   text-align: start;
   background-color: var(--whats-up);
-  padding: 0.5rem;
   border-radius: 20px;
   opacity: 1;
   transform: scale(0);
@@ -615,7 +608,7 @@ a:hover .linkedin-in {
   border-color: transparent var(--whats-up) transparent transparent;
   content: "";
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   left: -14px;
 }
 
@@ -627,15 +620,14 @@ a:hover .linkedin-in {
   border-color: transparent transparent transparent var(--whats-up);
   content: "";
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   right: -14px;
 }
 
 .le-talkative-jon .message-box p {
-  display: ;
+  padding: 0.75rem;
   color: var(--white);
   font-size: 1rem;
   font-weight: 200;
   max-width: 70vw;
-  ;
 }

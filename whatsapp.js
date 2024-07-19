@@ -76,15 +76,9 @@ document.addEventListener('DOMContentLoaded', function () {
         leTalkativeJon.getBoundingClientRect().width +
         "px";
     }
-    const someMorePixelsToAvoidOverlapBecauseICouldNotThinkOfAMuchBetterWay = 52;
+    const thirdOfSpacer = 37; // 14rem / 2. I know I know, it scales amazingly!
     leTalkativeJon.style.top = messageTop +
-      window.scrollY +
-      someMorePixelsToAvoidOverlapBecauseICouldNotThinkOfAMuchBetterWay +
-      // Future me might curse at present me when he sees that next line
-      // Present me is fine with the tradeoff of going to bed with a nicely working page
-      // The magic number 25 is just enough to be responsive on 320x480 So I suppose
-      // I am good to go to bed. Sorry future Jon
-      (message.dataset.messageId === "7" ? 25 : 0) + "px";
+      window.scrollY + thirdOfSpacer + "px";
     document.querySelector('#leMessage').innerHTML = MESSAGES[message.dataset.messageId];
   }
 
